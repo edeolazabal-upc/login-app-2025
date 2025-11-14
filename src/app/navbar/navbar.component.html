@@ -1,0 +1,8 @@
+<mat-toolbar color="accent">
+    <span>Ejemplo Login</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="primary" *ngIf="authService.getRole() === 'admin'">Admin Option</button>
+    <button mat-raised-button color="primary" *ngIf="authService.getRole() === 'user'">User Option</button>
+    <button mat-raised-button color="primary" (click)="onLogout()">Logout</button>
+  </mat-toolbar>
+  
