@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { authGuard } from './service/auth.guard';
 import { CommonModule } from '@angular/common';
 
+
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: '', component: NavbarComponent, canActivate: [authGuard] },
